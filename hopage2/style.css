@@ -4,18 +4,22 @@
     margin:0;
     font-family: Arial, Helvetica, sans-serif;
 }
+body
+{
+    background-image:url("main-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position:center;
+
+    overflow-y: hidden;
+}
 nav
 {
     display: flex;
     justify-content: space-around;
-    justify-items: baseline;
-    min-height:50vh;
+    height:50vh;
     border:1px solid gray;
-    background-image:url("main-image.jpg");
-    background-position:center;
-    background-repeat: none;
-    background-size: cover;
-    background-color:gray;
 }
 .logo
 {
@@ -23,13 +27,11 @@ nav
     width:10%;
     font-size: 3.5vh;
 }
-
 .logo a
 {
     color:#ffff;
     text-decoration: none;
 }
-
 .nav-links
 {
     display: flex;
@@ -63,3 +65,24 @@ nav
     width:100%;
     color:#ffff;
 }
+
+.click-bar
+{
+    /* height:50%; */
+    display: flex;
+    justify-content: center;
+    background: rgba(0,0,0,0.7);
+    position: relative;
+    top:44vh;
+}
+
+.click-bar p    
+{
+    color:#ffff;
+    font-size: 5.3vh;
+    position: relative;
+    transform: rotate(-45deg);
+
+    cursor:pointer;
+}
+
