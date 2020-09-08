@@ -12,7 +12,7 @@ body
     background-attachment: fixed;
     background-position:center;
 
-    overflow-y: hidden;
+    overflow-y: hidden; 
 }
 nav
 {
@@ -21,6 +21,7 @@ nav
     height:50vh;
     border:1px solid gray;
 }
+/* logo */
 .logo
 {
     margin-top:20px;
@@ -32,6 +33,11 @@ nav
     color:#ffff;
     text-decoration: none;
 }
+.logo a:hover
+{
+    color:#00FF9E;
+}
+/* links */
 .nav-links
 {
     display: flex;
@@ -49,26 +55,51 @@ nav
     color:#ffff;
     font-weight: bold;
 }
+.nav-links a:hover
+{
+    color:#00FF9E;
+}
 .cut-line
 {
     color:#ffff;
 }
 
-.nav-text
+section
 {
-    position: relative;
-    bottom:20vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    width:100%;
+    align-content: center;
+    height:20vh;
+
+    position: relative;
+    bottom:40vh;
+}
+section h1
+{
+    height:8vh;
+    text-align: center;
+
     color:#ffff;
+    font-size: 6vh;
+}
+section p
+{
+    text-align: center;
+    color:#ffff;
+    font-size: 2vh;
 }
 
-.click-bar
+.twitter a:hover
 {
-    /* height:50%; */
+    color:#ffff;
+    display: inline;
+}
+
+
+/* .click-bar
+{
+    height:50%;
     display: flex;
     justify-content: center;
     background: rgba(0,0,0,0.7);
@@ -76,13 +107,12 @@ nav
     top:44vh;
 }
 
-.click-bar p    
+.click-bar p  
 {
     color:#ffff;
     font-size: 5.3vh;
     position: relative;
     transform: rotate(-45deg);
-
     cursor:pointer;
-}
+} */
 
